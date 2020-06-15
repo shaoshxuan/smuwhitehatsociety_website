@@ -48,7 +48,7 @@ class NavBar extends React.Component {
                         <ul>
                             <Link to="/"><li>HOME</li></Link>
                             <a href="#about"><li>ABOUT</li></a>
-                            <a href="#team"><li>THE TEAM</li></a>
+                            <a href="#exco"><li>THE EXCO</li></a>
                             <Link to="/articles"><li>ARTICLES</li></Link>
                             <a href="#contact"><li>CONTACT</li></a>
                             <Link to="/whitehacks"><li id="whitehackText">WHITEHACKS</li></Link>

@@ -14,12 +14,14 @@
         left: 0;
         width: inherit;
         height: inherit;
+        object-fit: cover;
         z-index: -100;
     }
 
     .landingFlag {
         position: absolute;
-        right: 0;
+        right: 1rem;
+        color: $backgroundColorAlt;
         z-index: -50;
     }
 
@@ -37,25 +39,54 @@
         align-items: center;
 
         .landingHeader {
-            font-size: 2rem;
-            font-weight: 800;
-            color: $bodyTextColor;
-            animation: glitchHeader 2s ease-in-out forwards infinite;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $backgroundColorAlt;
+            border-radius: 0.5rem;
+            background-color: $bodyTextColor;
+            box-shadow: 0 0 20px $bodyTextColor;
+            animation: glitchHeader 4s ease-in-out forwards infinite;
         }
 
         .landingOverview {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: $bodyTextColor;
+            padding: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: $backgroundColorAlt;
+            border-radius: 0.5rem;
+            background-color: $bodyTextColor;
+            box-shadow: 0 0 20px $bodyTextColor;
+        }
+    }
+
+    .landingLearnMore {
+        position: absolute;
+        left: 50%;
+        bottom: 5rem;
+        transform: translateX(-50%);
+        text-decoration: none;
+        text-align: center;
+        color: $backgroundColorAlt;
+
+        .landingFAIcon {
+            font-size: 2rem;
+            transition: all 0.5s ease 0s;
         }
 
-        .landingLearnMore {
-            button {
-                padding: 1rem 2rem;
-                border: 2px solid $bodyTextColor;
-                border-radius: 0.5rem;
-                background-color: $backgroundColorAlt;
-            }
+        div {
+            font-size: 1.2rem;
+            transition: all 0.5s ease 0s;
+        }
+
+        &:hover > .landingFAIcon {
+            transform: scale(1.1) translateY(-0.5rem);
+            filter: drop-shadow(0 0 20px $highlightColor);
+        }
+
+        &:hover > div {
+            transform: scale(1.2);
+            text-shadow: 0 0 20px $highlightColor;
         }
     }
 }
