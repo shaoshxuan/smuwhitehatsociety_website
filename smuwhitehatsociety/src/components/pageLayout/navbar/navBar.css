@@ -1,1 +1,184 @@
-/* No CSS *//*# sourceMappingURL=navBar.css.map */
+* {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media all and (min-width: 2401px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 2400px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+header {
+  position: fixed;
+  padding: 1rem 5rem;
+  width: 100%;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #181510;
+  -webkit-box-shadow: 0 0 20px #181510;
+          box-shadow: 0 0 20px #181510;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+header .logoContainer {
+  text-decoration: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logoContainer img {
+  width: 4rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .logoContainer img:hover {
+  -webkit-transform: rotate(-15deg) scale(1.05);
+          transform: rotate(-15deg) scale(1.05);
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0 0 5px #fff);
+          filter: drop-shadow(0 0 5px #fff);
+}
+
+header .logoContainer div {
+  padding: 0 0.7rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+header .navContainer {
+  position: relative;
+}
+
+header .navContainer .navLinks li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.6rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .navContainer .navLinks li:hover {
+  color: #ffee0a;
+  text-shadow: 0 0 10px #ffee0a;
+}
+
+header .navContainer .navLinks li a {
+  text-decoration: none;
+}
+
+header .navContainer .navLinks #whitehackText {
+  color: #ffd600;
+  font-weight: 400;
+  -webkit-animation: whitehackPulse 3s ease-in-out forwards infinite;
+          animation: whitehackPulse 3s ease-in-out forwards infinite;
+}
+
+header .navContainer .navLinks #whitehackText:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@-webkit-keyframes whitehackPulse {
+  0% {
+    text-shadow: 0 0 0px #ffd600;
+  }
+  25% {
+    text-shadow: 0 0 10px #ffd600;
+  }
+  50% {
+    text-shadow: 0 0 0px #ffd600;
+  }
+  75% {
+    text-shadow: 0 0 20px #ffd600;
+  }
+  100% {
+    text-shadow: 0 0 0px #ffd600;
+  }
+}
+
+@keyframes whitehackPulse {
+  0% {
+    text-shadow: 0 0 0px #ffd600;
+  }
+  25% {
+    text-shadow: 0 0 10px #ffd600;
+  }
+  50% {
+    text-shadow: 0 0 0px #ffd600;
+  }
+  75% {
+    text-shadow: 0 0 20px #ffd600;
+  }
+  100% {
+    text-shadow: 0 0 0px #ffd600;
+  }
+}
+
+header.fadeUp {
+  top: -150px;
+}
+/*# sourceMappingURL=navBar.css.map */

@@ -1,37 +1,52 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import "./navBar.css";
+
 
 class NavBar extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            navOpen: false,
-        }
+    // constructor() {
+    //     super();
+    //     this.navRef = React.createRef(); 
+    // }
 
-        this.toggleNav = this.toggleNav.bind(this);
-    }
+    // componentDidMount() {
+    //     window.addEventListener("scroll", this.onScroll);
+    // }
+    // componentWillUnmount() {
+    //     window.addEventListener("scroll", this.onScroll);
+    // }
 
-    toggleNav() {
-        this.setState(prevState => ({
-            navOpen: !this.state.navOpen,
-        }))
-    }
+    // scrollYOffset = 0;
+    // onScroll = () => {
+    //     const header = this.navRef.current;
+
+    //     header.classList = "";
+    //     if (window.pageYOffset > 0){
+    //         if (window.pageYOffset > this.scrollYOffset){
+    //             header.classList.add("fadeUp");
+    //         }
+    //     } else {
+    //         header.classList = "";
+    //     }
+    //     this.scrollYOffset = window.pageYOffset;
+    // }
 
     render() {
         return (
-            <header>
-                <div className="logoContainer">
-                    {/* *insert whitehats logo* */}
-                </div>
+            <header ref={this.navRef}>
+                <Link to="/" className="logoContainer">
+                    <img src={require("../../../assets/whitehatSoc Logo.png")} alt="whitehatSocLogo"/>
+                    <div>SMU Whitehat Society</div>
+                </Link>
                 <div className="navContainer">
                     <div className="navLinks">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">THETEAM</a></li>
-                            <li><Link to="/articles">ARTICLES</Link></li>
-                            <li><a href="#">CONTACT</a></li>
-                            <li><Link to="/whitehacks">WHITEHACKS</Link></li>
+                            <Link to="/"><li>HOME</li></Link>
+                            <a href="#about"><li>ABOUT</li></a>
+                            <a href="#team"><li>THE TEAM</li></a>
+                            <Link to="/articles"><li>ARTICLES</li></Link>
+                            <a href="#contact"><li>CONTACT</li></a>
+                            <Link to="/whitehacks"><li id="whitehackText">WHITEHACKS</li></Link>
                         </ul>
                     </div>
                 </div>

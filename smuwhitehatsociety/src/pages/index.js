@@ -9,6 +9,7 @@ const IndexPage = () => {
         <>
             <PageLayout>
                 <h1>Index Page</h1>
+                <div style={{height: "100vh"}}></div>
             </PageLayout>
         </>
     )
