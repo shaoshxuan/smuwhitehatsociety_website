@@ -1,0 +1,61 @@
+@import "../../../styles/index.scss";
+
+.landing {
+    width: 100%;
+    height: 100vh;
+
+    .landingBreak {
+        padding: 0.8rem;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+        z-index: -100;
+    }
+
+    .landingFlag {
+        position: absolute;
+        right: 0;
+        z-index: -50;
+    }
+
+    .landingContent {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 60vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .landingHeader {
+            font-size: 2rem;
+            font-weight: 800;
+            color: $bodyTextColor;
+            animation: glitchHeader 2s ease-in-out forwards infinite;
+        }
+
+        .landingOverview {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $bodyTextColor;
+        }
+
+        .landingLearnMore {
+            button {
+                padding: 1rem 2rem;
+                border: 2px solid $bodyTextColor;
+                border-radius: 0.5rem;
+                background-color: $backgroundColorAlt;
+            }
+        }
+    }
+}

@@ -1,15 +1,17 @@
 import React from 'react';
 import "../styles/index.css";
-// import { Link } from 'gatsby';
-
 import PageLayout from '../components/pageLayout/pageLayout.js';
+
+import Landing from "../components/indexPage/landing/landing";
 
 const IndexPage = () => {
     return (
         <>
             <PageLayout>
-                <h1>Index Page</h1>
-                <div style={{height: "100vh"}}></div>
+                <Landing />
+                {/* <About /> */}
+                {/* <TheTeam /> */}
+                {/* <Contact /> */}
             </PageLayout>
         </>
     )

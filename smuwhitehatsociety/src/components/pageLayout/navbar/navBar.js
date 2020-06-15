@@ -4,36 +4,41 @@ import "./navBar.css";
 
 
 class NavBar extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.navRef = React.createRef(); 
-    // }
+    constructor() {
+        super();
+        this.state = {
+            cN: "top",
+            scrollYOffset: 0,
+            navOpen: false,
+        }
+    }
 
-    // componentDidMount() {
-    //     window.addEventListener("scroll", this.onScroll);
-    // }
-    // componentWillUnmount() {
-    //     window.addEventListener("scroll", this.onScroll);
-    // }
+    componentDidMount() {
+        window.addEventListener("scroll", this.onScroll);
+    }
+    componentWillUnmount() {
+        window.addEventListener("scroll", this.onScroll);
+    }
 
-    // scrollYOffset = 0;
-    // onScroll = () => {
-    //     const header = this.navRef.current;
-
-    //     header.classList = "";
-    //     if (window.pageYOffset > 0){
-    //         if (window.pageYOffset > this.scrollYOffset){
-    //             header.classList.add("fadeUp");
-    //         }
-    //     } else {
-    //         header.classList = "";
-    //     }
-    //     this.scrollYOffset = window.pageYOffset;
-    // }
+    onScroll = () => {
+        if (window.pageYOffset > 0){
+            if (window.pageYOffset > this.state.scrollYOffset){
+                this.setState(prevState => ({
+                    scrollYOffset: window.pageYOffset,
+                    cN: "fadeUp",
+                }))
+            } else {
+                this.setState(prevState => ({
+                    scrollYOffset: window.pageYOffset,
+                    cN: "",
+                }))
+            }
+        }
+    }
 
     render() {
         return (
-            <header ref={this.navRef}>
+            <header className={this.state.cN}>
                 <Link to="/" className="logoContainer">
                     <img src={require("../../../assets/whitehatSoc Logo.png")} alt="whitehatSocLogo"/>
                     <div>SMU Whitehat Society</div>
