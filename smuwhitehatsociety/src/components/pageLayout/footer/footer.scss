@@ -7,9 +7,9 @@ footer {
 
     .footerBar {
         position: relative;
-        top: -5px;
+        top: -2px;
         width: 100%;
-        height: 5px;
+        height: 2px;
         background-color: $highlightColor;
         box-shadow: 0 0 10px $highlightColor;
     }
@@ -23,9 +23,16 @@ footer {
 
         img {
             width: 100px;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 5px $bodyTextColor);
+            }
         }
 
         div {
+            padding-top: 0.5rem;
             color: $bodyTextColorAlt;
         }
 
@@ -35,6 +42,26 @@ footer {
             font-weight: 300;
             color: $highlightColor;
             opacity: 0.8;
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+    footer {
+        .footerContent {
+            img {
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    footer {
+        .footerContent {
+            img {
+                width: 70px;
+            }
         }
     }
 }

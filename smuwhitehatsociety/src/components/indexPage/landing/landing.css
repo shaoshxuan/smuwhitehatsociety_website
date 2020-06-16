@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
@@ -9,7 +10,7 @@
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #232323;
+  background-color: #191919;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -17,15 +18,35 @@
   background-color: #ffd600;
 }
 
+.sectionPad {
+  padding: 7rem 6rem;
+}
+
+.sectionHeader {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffd600;
+}
+
+.headerBreak {
+  padding: 0.5rem;
+}
+
+.contentWidth {
+  width: 80vw;
+}
+
 @media all and (min-width: 2401px) {
   :root {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media all and (max-width: 2400px) {
   :root {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -45,79 +66,17 @@
   :root {
     font-size: 14px;
   }
+  .sectionPad {
+    padding: 5rem 4rem;
+  }
 }
 
 @media all and (max-width: 480px) {
   :root {
     font-size: 13px;
   }
-}
-
-@-webkit-keyframes glitchHeader {
-  0% {
-  }
-  10% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  20% {
-    text-shadow: -0.05rem 0 0.6rem #01cbee;
-  }
-  30% {
-    text-shadow: 0.05rem 0.05rem 0.4rem #e41376;
-  }
-  40% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  50% {
-    text-shadow: -0.05rem -0.05rem 0.4rem #01cbee;
-  }
-  60% {
-  }
-  70% {
-    text-shadow: -0.05rem 0.05rem 0.6rem #01cbee;
-  }
-  80% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
-  }
-  90% {
-    text-shadow: 0.05rem -0.05rem 0.6rem #e41376;
-  }
-  100% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
-  }
-}
-
-@keyframes glitchHeader {
-  0% {
-  }
-  10% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  20% {
-    text-shadow: -0.05rem 0 0.6rem #01cbee;
-  }
-  30% {
-    text-shadow: 0.05rem 0.05rem 0.4rem #e41376;
-  }
-  40% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  50% {
-    text-shadow: -0.05rem -0.05rem 0.4rem #01cbee;
-  }
-  60% {
-  }
-  70% {
-    text-shadow: -0.05rem 0.05rem 0.6rem #01cbee;
-  }
-  80% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
-  }
-  90% {
-    text-shadow: 0.05rem -0.05rem 0.6rem #e41376;
-  }
-  100% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
+  .sectionPad {
+    padding: 3rem 2rem;
   }
 }
 
@@ -154,8 +113,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
-  width: 60vw;
+  text-align: right;
+  width: 65vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,33 +126,31 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .landing .landingContent .landingHeader {
   padding: 1.5rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #f3f1f1;
   border-radius: 0.5rem;
-  background-color: #181510;
-  -webkit-box-shadow: 0 0 20px #181510;
-          box-shadow: 0 0 20px #181510;
-  -webkit-animation: glitchHeader 4s ease-in-out forwards infinite;
-          animation: glitchHeader 4s ease-in-out forwards infinite;
+  background-color: #1b2326;
+  -webkit-box-shadow: 0 0 20px #121212;
+          box-shadow: 0 0 20px #121212;
 }
 
 .landing .landingContent .landingOverview {
   padding: 1.5rem;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 200;
   color: #f3f1f1;
   border-radius: 0.5rem;
-  background-color: #181510;
-  -webkit-box-shadow: 0 0 20px #181510;
-          box-shadow: 0 0 20px #181510;
+  background-color: #1b2326;
+  -webkit-box-shadow: 0 0 20px #121212;
+          box-shadow: 0 0 20px #121212;
 }
 
 .landing .landingLearnMore {
@@ -220,15 +177,57 @@
 }
 
 .landing .landingLearnMore:hover > .landingFAIcon {
-  -webkit-transform: scale(1.1) translateY(-0.5rem);
-          transform: scale(1.1) translateY(-0.5rem);
-  -webkit-filter: drop-shadow(0 0 20px #ffd600);
-          filter: drop-shadow(0 0 20px #ffd600);
+  -webkit-transform: scale(1.05) translateY(-0.2rem);
+          transform: scale(1.05) translateY(-0.2rem);
+  -webkit-filter: drop-shadow(0 0 10px #ffd600);
+          filter: drop-shadow(0 0 10px #ffd600);
 }
 
 .landing .landingLearnMore:hover > div {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   text-shadow: 0 0 20px #ffd600;
+}
+
+@media all and (max-width: 960px) {
+  .landing .landingFlag {
+    display: none;
+  }
+  .landing .landingContent .landingHeader {
+    font-size: 1.4rem;
+  }
+  .landing .landingContent .landingOverview {
+    font-size: 1.2rem;
+  }
+  .landing .landingLearnMore .landingFAIcon {
+    font-size: 1.6rem;
+  }
+  .landing .landingLearnMore div {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .landing .landingContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .landing .landingContent .landingHeader {
+    font-size: 1.2rem;
+  }
+  .landing .landingContent .landingOverview {
+    font-size: 1rem;
+  }
+  .landing .landingLearnMore .landingFAIcon {
+    font-size: 1.2rem;
+  }
+  .landing .landingLearnMore div {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=landing.css.map */

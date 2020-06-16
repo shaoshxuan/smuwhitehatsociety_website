@@ -24,20 +24,19 @@ header {
         align-items: center;
 
         img {
-            width: 4rem;
-            transition: all 0.3s ease 0s;
-
-            &:hover {
-                transform: rotate(-15deg) scale(1.05);
-                border-radius: 50%;
-                filter: drop-shadow(0 0 5px #fff)
-            }
+            display: none;
         }
 
         div {
             padding: 0 0.7rem;
             color: $bodyTextColor;
             font-size: 1.2rem;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 5px #fff)
+            }
         }
     }
 
@@ -146,6 +145,10 @@ header.fadeUp {
         }
     }
 
+    .hamburgerContainer:focus {
+        outline: 0;
+    }
+
     header {
         padding: 5rem;
         width: 50vw;
@@ -158,10 +161,10 @@ header.fadeUp {
 
         .logoContainer {
             img {
-                position: relative;
-                bottom: 0;
-                width: 6rem;
+                display: block;
+                width: 5rem;
             }
+
             div {
                 display: none;
             }
@@ -169,6 +172,10 @@ header.fadeUp {
 
         .navContainer {
             .navLinks {
+                Link, a {
+                    text-decoration: none;
+                }
+
                 li {
                     display: block;
                     padding: 1.5rem;
@@ -180,6 +187,10 @@ header.fadeUp {
 
     header.open {
         right: 0;
+    }
+
+    header.fadeUp {
+        top: 0;
     }
 }
 

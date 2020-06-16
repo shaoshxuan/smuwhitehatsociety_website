@@ -4,6 +4,7 @@ import PageLayout from '../components/pageLayout/pageLayout.js';
 
 import Landing from "../components/indexPage/landing/landing";
 import About from "../components/indexPage/about/about";
+import TheExco from "../components/indexPage/theExco/theExco";
 
 const IndexPage = () => {
     return (
@@ -11,7 +12,7 @@ const IndexPage = () => {
             <PageLayout>
                 <Landing />
                 <About />
-                {/* <TheTeam /> */}
+                <TheExco />
                 {/* <Contact /> */}
             </PageLayout>
         </>

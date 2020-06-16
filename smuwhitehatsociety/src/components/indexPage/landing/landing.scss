@@ -30,32 +30,31 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center;
-        width: 60vw;
+        text-align: right;
+        width: 65vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
         .landingHeader {
             padding: 1.5rem;
             font-size: 1.6rem;
-            font-weight: 500;
+            font-weight: 400;
             color: $bodyTextColorAlt;
             border-radius: 0.5rem;
-            background-color: $headerFooterBackgroundColor;
+            background-color: #1b2326;
             box-shadow: 0 0 20px $headerFooterBackgroundColor;
-            animation: glitchHeader 4s ease-in-out forwards infinite;
         }
 
         .landingOverview {
             padding: 1.5rem;
             font-size: 1.4rem;
-            font-weight: 300;
+            font-weight: 200;
             color: $bodyTextColorAlt;
             border-radius: 0.5rem;
-            background-color: $headerFooterBackgroundColor;
+            background-color: #1b2326;
             box-shadow: 0 0 20px $headerFooterBackgroundColor;
         }
     }
@@ -80,21 +79,74 @@
         }
 
         &:hover > .landingFAIcon {
-            transform: scale(1.1) translateY(-0.5rem);
-            filter: drop-shadow(0 0 20px $highlightColor);
+            transform: scale(1.05) translateY(-0.2rem);
+            filter: drop-shadow(0 0 10px $highlightColor);
         }
 
         &:hover > div {
-            transform: scale(1.2);
+            transform: scale(1.1);
             text-shadow: 0 0 20px $highlightColor;
         }
     }
 }
 
 @media all and (max-width: 960px){
-    
+    .landing {
+        .landingFlag {
+            display: none;
+        }
+
+        .landingContent {
+            .landingHeader {
+                font-size: 1.4rem;
+            }
+
+            .landingOverview {
+                font-size: 1.2rem;
+            }
+        }
+
+        .landingLearnMore {
+            .landingFAIcon {
+                font-size: 1.6rem;
+            }
+
+            div {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 720px){
+    .landing {
+        .landingContent {
+            align-items: center;
+            text-align: center;
+        }
+    }
 }
 
 @media all and (max-width: 480px){
-    
+    .landing {
+        .landingContent {
+            .landingHeader {
+                font-size: 1.2rem;
+            }
+
+            .landingOverview {
+                font-size: 1rem;
+            }
+        }
+
+        .landingLearnMore {
+            .landingFAIcon {
+                font-size: 1.2rem;
+            }
+
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
 }

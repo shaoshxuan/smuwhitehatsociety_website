@@ -18,7 +18,7 @@ const Landing = () => {
                 </div>
                 <div className="landingBreak"></div>
                 <div className="landingOverview">
-                    We are a <span style={{color: "#ffd600", textShadow: "0 0 10px #181510"}}>Cyber-Security</span> Special Interest Group (SIG) in<br/>
+                    We are a <span style={{color: "#ffd600"}}>Cyber-Security</span> Special Interest Group (SIG) in<br/>
                     Singapore Management University!
                 </div>
                 <div className="landingBreak"></div>

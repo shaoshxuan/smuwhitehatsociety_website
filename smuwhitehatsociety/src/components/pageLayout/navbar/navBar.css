@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
@@ -9,7 +10,7 @@
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #232323;
+  background-color: #191919;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -17,15 +18,35 @@
   background-color: #ffd600;
 }
 
+.sectionPad {
+  padding: 7rem 6rem;
+}
+
+.sectionHeader {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffd600;
+}
+
+.headerBreak {
+  padding: 0.5rem;
+}
+
+.contentWidth {
+  width: 80vw;
+}
+
 @media all and (min-width: 2401px) {
   :root {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media all and (max-width: 2400px) {
   :root {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -45,79 +66,17 @@
   :root {
     font-size: 14px;
   }
+  .sectionPad {
+    padding: 5rem 4rem;
+  }
 }
 
 @media all and (max-width: 480px) {
   :root {
     font-size: 13px;
   }
-}
-
-@-webkit-keyframes glitchHeader {
-  0% {
-  }
-  10% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  20% {
-    text-shadow: -0.05rem 0 0.6rem #01cbee;
-  }
-  30% {
-    text-shadow: 0.05rem 0.05rem 0.4rem #e41376;
-  }
-  40% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  50% {
-    text-shadow: -0.05rem -0.05rem 0.4rem #01cbee;
-  }
-  60% {
-  }
-  70% {
-    text-shadow: -0.05rem 0.05rem 0.6rem #01cbee;
-  }
-  80% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
-  }
-  90% {
-    text-shadow: 0.05rem -0.05rem 0.6rem #e41376;
-  }
-  100% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
-  }
-}
-
-@keyframes glitchHeader {
-  0% {
-  }
-  10% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  20% {
-    text-shadow: -0.05rem 0 0.6rem #01cbee;
-  }
-  30% {
-    text-shadow: 0.05rem 0.05rem 0.4rem #e41376;
-  }
-  40% {
-    text-shadow: 0.05rem 0 0.4rem #e41376;
-  }
-  50% {
-    text-shadow: -0.05rem -0.05rem 0.4rem #01cbee;
-  }
-  60% {
-  }
-  70% {
-    text-shadow: -0.05rem 0.05rem 0.6rem #01cbee;
-  }
-  80% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
-  }
-  90% {
-    text-shadow: 0.05rem -0.05rem 0.6rem #e41376;
-  }
-  100% {
-    text-shadow: -0.05rem 0 0.4rem #01cbee;
+  .sectionPad {
+    padding: 3rem 2rem;
   }
 }
 
@@ -140,9 +99,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #181510;
-  -webkit-box-shadow: 0 0 50px #181510;
-          box-shadow: 0 0 50px #181510;
+  background-color: #121212;
+  -webkit-box-shadow: 0 0 50px #121212;
+          box-shadow: 0 0 50px #121212;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   z-index: 500;
@@ -167,23 +126,22 @@ header .logoContainer {
 }
 
 header .logoContainer img {
-  width: 4rem;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-header .logoContainer img:hover {
-  -webkit-transform: rotate(-15deg) scale(1.05);
-          transform: rotate(-15deg) scale(1.05);
-  border-radius: 50%;
-  -webkit-filter: drop-shadow(0 0 5px #fff);
-          filter: drop-shadow(0 0 5px #fff);
+  display: none;
 }
 
 header .logoContainer div {
   padding: 0 0.7rem;
   color: #ffffff;
   font-size: 1.2rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .logoContainer div:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: drop-shadow(0 0 5px #fff);
+          filter: drop-shadow(0 0 5px #fff);
 }
 
 header .navContainer {
@@ -202,8 +160,8 @@ header .navContainer .navLinks li {
 }
 
 header .navContainer .navLinks li:hover {
-  color: #ffee0a;
-  text-shadow: 0 0 10px #ffee0a;
+  color: #d6c808;
+  text-shadow: 0 0 10px #d6c808;
 }
 
 header .navContainer .navLinks li a {
@@ -309,6 +267,9 @@ header.fadeUp {
     -webkit-transform: rotate(-45deg) translate(3.5em, 3.5em);
             transform: rotate(-45deg) translate(3.5em, 3.5em);
   }
+  .hamburgerContainer:focus {
+    outline: 0;
+  }
   header {
     padding: 5rem;
     width: 50vw;
@@ -327,12 +288,14 @@ header.fadeUp {
     border-radius: 5rem 0 0 1rem;
   }
   header .logoContainer img {
-    position: relative;
-    bottom: 0;
-    width: 6rem;
+    display: block;
+    width: 5rem;
   }
   header .logoContainer div {
     display: none;
+  }
+  header .navContainer .navLinks Link, header .navContainer .navLinks a {
+    text-decoration: none;
   }
   header .navContainer .navLinks li {
     display: block;
@@ -341,6 +304,9 @@ header.fadeUp {
   }
   header.open {
     right: 0;
+  }
+  header.fadeUp {
+    top: 0;
   }
 }
 

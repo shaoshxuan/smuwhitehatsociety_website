@@ -44,7 +44,6 @@ class NavBar extends React.Component {
     }
 
     toggleHamburger = () => {
-        console.log(this.state);
         this.setState((prevState) => ({
             ...prevState,
             navOpen: !prevState.navOpen,
@@ -55,10 +54,10 @@ class NavBar extends React.Component {
     render() {
         return (
             <>
-                <div className="hamburgerContainer" onClick={this.toggleHamburger}>
+                <div role="button" tabIndex={0} className="hamburgerContainer" onClick={this.toggleHamburger} onKeyDown={this.toggleHamburger}>
                     <div className={this.state.navOpen ? "hamburgerMenu open" : "hamburgerMenu"}></div>
                 </div>
-                <header className={this.state.cN, this.state.headerCN}>
+                <header className={this.state.cN + " " + this.state.headerCN}>
                     <Link to="/" className="logoContainer">
                         <img src={require("../../../assets/whitehatSoc Logo.png")} alt="whitehatSocLogo"/>
                         <div>SMU Whitehat Society</div>
