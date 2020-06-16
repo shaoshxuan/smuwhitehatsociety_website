@@ -21,7 +21,7 @@
     .landingFlag {
         position: absolute;
         right: 1rem;
-        color: $backgroundColorAlt;
+        color: $bodyTextColorAlt;
         z-index: -50;
     }
 
@@ -42,10 +42,10 @@
             padding: 1.5rem;
             font-size: 1.6rem;
             font-weight: 500;
-            color: $backgroundColorAlt;
+            color: $bodyTextColorAlt;
             border-radius: 0.5rem;
-            background-color: $bodyTextColor;
-            box-shadow: 0 0 20px $bodyTextColor;
+            background-color: $headerFooterBackgroundColor;
+            box-shadow: 0 0 20px $headerFooterBackgroundColor;
             animation: glitchHeader 4s ease-in-out forwards infinite;
         }
 
@@ -53,10 +53,10 @@
             padding: 1.5rem;
             font-size: 1.4rem;
             font-weight: 300;
-            color: $backgroundColorAlt;
+            color: $bodyTextColorAlt;
             border-radius: 0.5rem;
-            background-color: $bodyTextColor;
-            box-shadow: 0 0 20px $bodyTextColor;
+            background-color: $headerFooterBackgroundColor;
+            box-shadow: 0 0 20px $headerFooterBackgroundColor;
         }
     }
 
@@ -67,7 +67,7 @@
         transform: translateX(-50%);
         text-decoration: none;
         text-align: center;
-        color: $backgroundColorAlt;
+        color: $bodyTextColor;
 
         .landingFAIcon {
             font-size: 2rem;
@@ -89,4 +89,12 @@
             text-shadow: 0 0 20px $highlightColor;
         }
     }
+}
+
+@media all and (max-width: 960px){
+    
+}
+
+@media all and (max-width: 480px){
+    
 }

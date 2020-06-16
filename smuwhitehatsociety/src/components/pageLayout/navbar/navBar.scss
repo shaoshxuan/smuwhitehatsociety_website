@@ -10,8 +10,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: $bodyTextColor;
-    box-shadow: 0 0 50px $bodyTextColor;
+    background-color: $headerFooterBackgroundColor;
+    box-shadow: 0 0 50px $headerFooterBackgroundColor;
     transition: all 0.5s ease-in-out 0s;
     z-index: 500;
 
@@ -36,7 +36,7 @@ header {
 
         div {
             padding: 0 0.7rem;
-            color: $backgroundColor;
+            color: $bodyTextColor;
             font-size: 1.2rem;
         }
     }
@@ -49,7 +49,7 @@ header {
                 list-style-type: none;
                 display: inline-block;
                 padding: 0.6rem;
-                color: $backgroundColor;
+                color: $bodyTextColor;
                 font-size: 0.9rem;
                 font-weight: 300;
                 transition: all 0.3s ease 0s;
@@ -96,4 +96,95 @@ header {
 
 header.fadeUp {
     top: -100px;
+}
+
+@media all and (max-width: 960px){
+    .hamburgerContainer {
+        margin: 3rem;
+        padding: 0.9rem 0.2rem;
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+
+        .hamburgerMenu {
+            width: 2rem;
+            height: 0.2rem;
+            background-color: $highlightColor;
+            border-radius: 0.1rem;
+            transition: all 0.3s ease 0s;
+        }
+
+        .hamburgerMenu::before, .hamburgerMenu::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 0.2rem;
+            background-color: $highlightColor;
+            border-radius: 0.1rem;
+            transition: all 0.3s ease 0s;
+        }
+
+        .hamburgerMenu::before {
+            transform: translateY(-0.7rem)
+        }
+
+        .hamburgerMenu::after {
+            transform: translateY(0.7rem)
+        }
+
+        .hamburgerMenu.open {
+            transform: translateX(-5em);
+            background-color: transparent;
+        }
+
+        .hamburgerMenu.open::before {
+            transform: rotate(45deg) translate(3.5em, -3.5em);
+        }
+    
+        .hamburgerMenu.open::after {
+            transform: rotate(-45deg) translate(3.5em, 3.5em);
+        }
+    }
+
+    header {
+        padding: 5rem;
+        width: 50vw;
+        height: 100vh;
+        right: -80vw;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5rem 0 0 1rem;
+
+        .logoContainer {
+            img {
+                position: relative;
+                bottom: 0;
+                width: 6rem;
+            }
+            div {
+                display: none;
+            }
+        }
+
+        .navContainer {
+            .navLinks {
+                li {
+                    display: block;
+                    padding: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    header.open {
+        right: 0;
+    }
+}
+
+@media all and (max-width: 480px){
+    header {
+        width: 75vw;
+    }
 }

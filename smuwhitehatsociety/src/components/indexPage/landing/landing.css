@@ -7,6 +7,16 @@
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #ffd600;
+}
+
 @media all and (min-width: 2401px) {
   :root {
     font-size: 18px;
@@ -194,7 +204,7 @@
           transform: translateX(-50%);
   text-decoration: none;
   text-align: center;
-  color: #f3f1f1;
+  color: #ffffff;
 }
 
 .landing .landingLearnMore .landingFAIcon {

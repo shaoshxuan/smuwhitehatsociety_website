@@ -3,13 +3,14 @@ import "../styles/index.css";
 import PageLayout from '../components/pageLayout/pageLayout.js';
 
 import Landing from "../components/indexPage/landing/landing";
+import About from "../components/indexPage/about/about";
 
 const IndexPage = () => {
     return (
         <>
             <PageLayout>
                 <Landing />
-                {/* <About /> */}
+                <About />
                 {/* <TheTeam /> */}
                 {/* <Contact /> */}
             </PageLayout>

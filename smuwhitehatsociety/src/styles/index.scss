@@ -1,6 +1,8 @@
-$backgroundColor: #ffffff;
-$backgroundColorAlt: #f3f1f1;
-$bodyTextColor: #181510;
+$headerFooterBackgroundColor: #181510;
+$backgroundColor: #232323;
+$backgroundColorAlt: #353535;
+$bodyTextColor: #ffffff;
+$bodyTextColorAlt: #f3f1f1;
 $highlightColor: #ffd600;
 $highlightColorAlt: #ffee0a;
 
@@ -10,6 +12,16 @@ $highlightColorAlt: #ffee0a;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: $backgroundColor;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: $highlightColor;
 }
 
 @media all and (min-width: 2401px){

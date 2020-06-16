@@ -1,0 +1,16 @@
+@import "../../../styles/index.scss";
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: $backgroundColor;
+
+    .landingBar {
+        position: relative;
+        top: -5px;
+        width: 100%;
+        height: 5px;
+        background-color: $highlightColor;
+        box-shadow: 0 0 10px $highlightColor;
+    }
+}
