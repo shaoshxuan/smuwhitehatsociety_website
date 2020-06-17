@@ -164,7 +164,7 @@ header .navContainer .navLinks li:hover {
   text-shadow: 0 0 10px #d6c808;
 }
 
-header .navContainer .navLinks li a {
+header .navContainer .navLinks li Link, header .navContainer .navLinks li AnchorLink {
   text-decoration: none;
 }
 

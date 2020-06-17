@@ -138,8 +138,8 @@
   color: #f3f1f1;
   border-radius: 0.5rem;
   background-color: #1b2326;
-  -webkit-box-shadow: 0 0 20px #121212;
-          box-shadow: 0 0 20px #121212;
+  -webkit-box-shadow: 0 0 50px #121212;
+          box-shadow: 0 0 50px #121212;
 }
 
 .landing .landingContent .landingOverview {
@@ -149,44 +149,58 @@
   color: #f3f1f1;
   border-radius: 0.5rem;
   background-color: #1b2326;
-  -webkit-box-shadow: 0 0 20px #121212;
-          box-shadow: 0 0 20px #121212;
+  -webkit-box-shadow: 0 0 50px #121212;
+          box-shadow: 0 0 50px #121212;
 }
 
-.landing .landingLearnMore {
-  position: absolute;
-  left: 50%;
-  bottom: 5rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.landing .landingContent .landingLearnMore {
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #f3f1f1;
   text-decoration: none;
-  text-align: center;
-  color: #ffffff;
+  border-radius: 0.5rem;
+  background-color: #1b2326;
+  -webkit-box-shadow: 0 0 50px #121212;
+          box-shadow: 0 0 50px #121212;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.landing .landingLearnMore .landingFAIcon {
-  font-size: 2rem;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+.landing .landingContent .landingLearnMore div {
+  float: left;
+  padding: 0 0.5rem;
 }
 
-.landing .landingLearnMore div {
-  font-size: 1.2rem;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+.landing .landingContent .landingLearnMore div, .landing .landingContent .landingLearnMore .landingFAIcon {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.landing .landingLearnMore:hover > .landingFAIcon {
-  -webkit-transform: scale(1.05) translateY(-0.2rem);
-          transform: scale(1.05) translateY(-0.2rem);
-  -webkit-filter: drop-shadow(0 0 10px #ffd600);
-          filter: drop-shadow(0 0 10px #ffd600);
+.landing .landingContent .landingLearnMore:hover > div {
+  text-shadow: 0 0 20px #ffd600;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.landing .landingLearnMore:hover > div {
+.landing .landingContent .landingLearnMore:hover > .landingFAIcon {
+  -webkit-filter: drop-shadow(0 0 20px #ffd600);
+          filter: drop-shadow(0 0 20px #ffd600);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  text-shadow: 0 0 20px #ffd600;
 }
 
 @media all and (max-width: 960px) {
@@ -199,12 +213,6 @@
   .landing .landingContent .landingOverview {
     font-size: 1.2rem;
   }
-  .landing .landingLearnMore .landingFAIcon {
-    font-size: 1.6rem;
-  }
-  .landing .landingLearnMore div {
-    font-size: 1.1rem;
-  }
 }
 
 @media all and (max-width: 720px) {
@@ -213,6 +221,9 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .landing .landingContent .landingLearnMore {
+    font-size: 1rem;
   }
 }
 
@@ -223,11 +234,8 @@
   .landing .landingContent .landingOverview {
     font-size: 1rem;
   }
-  .landing .landingLearnMore .landingFAIcon {
-    font-size: 1.2rem;
-  }
-  .landing .landingLearnMore div {
-    font-size: 1rem;
+  .landing .landingContent .landingLearnMore {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=landing.css.map */

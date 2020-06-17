@@ -45,7 +45,7 @@
             color: $bodyTextColorAlt;
             border-radius: 0.5rem;
             background-color: #1b2326;
-            box-shadow: 0 0 20px $headerFooterBackgroundColor;
+            box-shadow: 0 0 50px $headerFooterBackgroundColor;
         }
 
         .landingOverview {
@@ -55,37 +55,42 @@
             color: $bodyTextColorAlt;
             border-radius: 0.5rem;
             background-color: #1b2326;
-            box-shadow: 0 0 20px $headerFooterBackgroundColor;
-        }
-    }
-
-    .landingLearnMore {
-        position: absolute;
-        left: 50%;
-        bottom: 5rem;
-        transform: translateX(-50%);
-        text-decoration: none;
-        text-align: center;
-        color: $bodyTextColor;
-
-        .landingFAIcon {
-            font-size: 2rem;
-            transition: all 0.5s ease 0s;
+            box-shadow: 0 0 50px $headerFooterBackgroundColor;
         }
 
-        div {
-            font-size: 1.2rem;
-            transition: all 0.5s ease 0s;
-        }
+        .landingLearnMore {
+            padding: 1rem 1.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: $bodyTextColorAlt;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            background-color: #1b2326;
+            box-shadow: 0 0 50px $headerFooterBackgroundColor;
+            transition: all 0.3s ease 0s;
+            
+            div {
+                float: left;
+                padding: 0 0.5rem;
+            }
 
-        &:hover > .landingFAIcon {
-            transform: scale(1.05) translateY(-0.2rem);
-            filter: drop-shadow(0 0 10px $highlightColor);
-        }
+            div, .landingFAIcon {
+                transition: all 0.3s ease 0s;
+            }
 
-        &:hover > div {
-            transform: scale(1.1);
-            text-shadow: 0 0 20px $highlightColor;
+            &:hover>div {
+                text-shadow: 0 0 20px $highlightColor;
+                transform: scale(1.05);
+            }
+
+            &:hover>.landingFAIcon {
+                filter: drop-shadow(0 0 20px $highlightColor);
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -105,16 +110,6 @@
                 font-size: 1.2rem;
             }
         }
-
-        .landingLearnMore {
-            .landingFAIcon {
-                font-size: 1.6rem;
-            }
-
-            div {
-                font-size: 1.1rem;
-            }
-        }
     }
 }
 
@@ -123,6 +118,10 @@
         .landingContent {
             align-items: center;
             text-align: center;
+
+            .landingLearnMore {
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -137,15 +136,9 @@
             .landingOverview {
                 font-size: 1rem;
             }
-        }
 
-        .landingLearnMore {
-            .landingFAIcon {
-                font-size: 1.2rem;
-            }
-
-            div {
-                font-size: 1rem;
+            .landingLearnMore {
+                font-size: 0.8rem;
             }
         }
     }

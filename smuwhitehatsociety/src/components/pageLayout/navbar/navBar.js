@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "./navBar.css";
 
 
@@ -65,11 +67,11 @@ class NavBar extends React.Component {
                     <div className="navContainer">
                         <div className="navLinks">
                             <ul>
-                                <Link to="/"><li>HOME</li></Link>
-                                <a href="#about"><li>ABOUT</li></a>
-                                <a href="#exco"><li>THE EXCO</li></a>
+                                <Link to="/#home"><li>HOME</li></Link>
+                                <AnchorLink to="/#about"><li>ABOUT</li></AnchorLink>
+                                <AnchorLink to="/#exco"><li>THE EXCO</li></AnchorLink>
                                 <Link to="/articles"><li>ARTICLES</li></Link>
-                                <a href="#contact"><li>CONTACT</li></a>
+                                <AnchorLink to="/#contact"><li>CONTACT</li></AnchorLink>
                                 <Link to="/whitehacks"><li id="whitehackText">WHITEHACKS</li></Link>
                             </ul>
                         </div>
