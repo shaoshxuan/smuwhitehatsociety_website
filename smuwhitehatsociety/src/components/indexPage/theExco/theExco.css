@@ -82,9 +82,148 @@
 
 .theExco {
   width: 100%;
-  height: 100vh;
   background-color: #242424;
   -webkit-box-shadow: 0 0 20px #242424;
           box-shadow: 0 0 20px #242424;
+}
+
+.theExco .academicYear {
+  color: #f3f1f1;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.theExco .excoContainer {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.theExco .excoContainer .excoMemberContainer {
+  width: 15rem;
+  height: 16.5rem;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theExco .excoContainer .excoMemberContainer .dpContainer {
+  width: 12rem;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theExco .excoContainer .excoMemberContainer .dpContainer:hover > .excoRotateRing {
+  -webkit-transform: rotate(540deg);
+          transform: rotate(540deg);
+}
+
+.theExco .excoContainer .excoMemberContainer .dpContainer .excoRotateRing {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-left: 4px solid #a0a0a0;
+  border-top: 4px solid #a0a0a0;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-radius: 50%;
+  -webkit-transition: all 0.7s ease-in-out 0s;
+  transition: all 0.7s ease-in-out 0s;
+}
+
+.theExco .excoContainer .excoMemberContainer .dpContainer .excoOuterRing {
+  position: absolute;
+  width: 11rem;
+  height: 11rem;
+  border: 4px solid #191919;
+  border-radius: 50%;
+}
+
+.theExco .excoContainer .excoMemberContainer .dpContainer .excoInnerRing {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border: 4px solid #a0a0a0;
+  border-radius: 50%;
+}
+
+.theExco .excoContainer .excoMemberContainer .dpContainer .excoDP {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.theExco .excoContainer .excoMemberContainer .excoName {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.theExco .excoContainer .excoMemberContainer .excoRole {
+  font-size: 1.1rem;
+  color: #ffd600;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+}
+
+@media all and (min-width: 1440px) {
+  .theExco .excoContainer {
+    max-width: 1600px;
+  }
+}
+
+@media all and (max-width: 1650px) {
+  .theExco .excoContainer {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .theExco .excoContainer {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=theExco.css.map */

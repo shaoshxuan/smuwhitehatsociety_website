@@ -2,7 +2,135 @@
 
 .theExco {
     width: 100%;
-    height: 100vh;
     background-color: $backgroundColorAlt;
     box-shadow: 0 0 20px $backgroundColorAlt;
+
+    .academicYear {
+        color: $bodyTextColorAlt;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .excoContainer {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 25%;
+
+        .excoMemberContainer {
+            width: 15rem;
+            height: 16.5rem;
+            margin: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            .dpContainer {
+                width: 12rem;
+                height: 12rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover>.excoRotateRing {
+                    transform: rotate(540deg);
+                }
+
+                .excoRotateRing {
+                    position: absolute;
+                    width: 12rem;
+                    height: 12rem;
+                    border-left: 4px solid #a0a0a0;
+                    border-top: 4px solid #a0a0a0;
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-radius: 50%;
+                    transition: all 0.7s ease-in-out 0s;
+                }
+
+                .excoOuterRing {
+                    position: absolute;
+                    width: 11rem;
+                    height: 11rem;
+                    border: 4px solid $backgroundColor;
+                    border-radius: 50%;
+                }
+
+                .excoInnerRing {
+                    position: absolute;
+                    width: 10rem;
+                    height: 10rem;
+                    border: 4px solid #a0a0a0;
+                    border-radius: 50%;
+                }
+
+                .excoDP {
+                    object-fit: cover;
+                    position: absolute;
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+                }
+            }
+
+            .excoName {
+                font-size: 1.1rem;
+                color: $bodyTextColor;
+                font-weight: 300;
+            }
+
+            .excoRole {
+                font-size: 1.1rem;
+                color: $highlightColor;
+                font-weight: 200;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// @media all and (min-width: 2401px){
+
+// }
+
+// @media all and (max-width: 2400px){
+
+// }
+
+@media all and (min-width: 1440px){
+    .theExco {
+        .excoContainer {
+            max-width: 1600px;
+        }
+    }
+    
+}
+
+@media all and (max-width: 1650px){
+    .theExco {
+        .excoContainer {
+            width: 90%;
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+    .theExco {
+        .excoContainer {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+
 }

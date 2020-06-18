@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import './landing.css';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
@@ -23,10 +23,10 @@ const Landing = () => {
                     Singapore Management University!
                 </div>
                 <div className="landingBreak"></div>
-                <AnchorLink to="/#about" className="landingLearnMore">
+                <Link to="/#about" className="landingLearnMore">
                     <div>Find Out More!</div>
                     <FontAwesomeIcon icon={ faUserSecret } className="landingFAIcon"/>
-                </AnchorLink>
+                </Link>
             </div>
         </div>
     )

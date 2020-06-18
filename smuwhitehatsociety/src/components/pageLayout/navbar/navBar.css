@@ -100,8 +100,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #121212;
-  -webkit-box-shadow: 0 0 50px #121212;
-          box-shadow: 0 0 50px #121212;
+  -webkit-box-shadow: 0 0 25px #121212;
+          box-shadow: 0 0 25px #121212;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   z-index: 500;
