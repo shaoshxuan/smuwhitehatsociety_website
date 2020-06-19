@@ -155,6 +155,8 @@
 .theExco .excoContainer .excoMemberContainer .dpContainer:hover > .excoRotateRing {
   -webkit-transform: rotate(540deg);
           transform: rotate(540deg);
+  border-left: 4px solid #ffd600;
+  border-top: 4px solid #ffd600;
 }
 
 .theExco .excoContainer .excoMemberContainer .dpContainer .excoRotateRing {
@@ -163,8 +165,8 @@
   height: 12rem;
   border-left: 4px solid #a0a0a0;
   border-top: 4px solid #a0a0a0;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
   border-radius: 50%;
   -webkit-transition: all 0.7s ease-in-out 0s;
   transition: all 0.7s ease-in-out 0s;

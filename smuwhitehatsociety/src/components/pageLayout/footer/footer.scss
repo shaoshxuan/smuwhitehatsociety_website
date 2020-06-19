@@ -2,7 +2,7 @@
 
 footer {
     width: 100%;
-    height: 250px;
+    height: 15rem;
     background-color: $headerFooterBackgroundColor;
 
     .footerBar {
@@ -15,7 +15,7 @@ footer {
     }
 
     .footerContent {
-        height: 240px;
+        height: 14rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
