@@ -101,8 +101,8 @@
 }
 
 .landing .landingFlag {
+  display: none;
   position: absolute;
-  right: 1rem;
   color: #f3f1f1;
   z-index: -50;
 }

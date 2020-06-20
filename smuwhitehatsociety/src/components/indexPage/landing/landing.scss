@@ -19,8 +19,8 @@
     }
 
     .landingFlag {
+        display: none;
         position: absolute;
-        right: 1rem;
         color: $bodyTextColorAlt;
         z-index: -50;
     }

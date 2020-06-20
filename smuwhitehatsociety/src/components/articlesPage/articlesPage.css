@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #191919;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #ffd600;
+}
+
+.sectionPad {
+  padding: 7rem 6rem;
+}
+
+.sectionHeader {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffd600;
+}
+
+.headerBreak {
+  padding: 0.5rem;
+}
+
+.contentWidth {
+  width: 80vw;
+}
+
+@media all and (min-width: 2401px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 2400px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  :root {
+    font-size: 14px;
+  }
+  .sectionPad {
+    padding: 5rem 4rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+  .sectionPad {
+    padding: 3rem 2rem;
+  }
+}
+
+.articles {
+  width: 100%;
+}
+
+.articles .articlesBanner {
+  width: 100%;
+  height: 400px;
+  background-color: #191919;
+}
+
+.articles .articlesBanner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: inherit;
+  opacity: 0.5;
+}
+
+.articles .articlesBanner .articlesHeader {
+  padding: 1.5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  width: 35vw;
+  border-radius: 0.5rem;
+  background-color: #131818;
+  -webkit-box-shadow: 0 0 50px #121212;
+          box-shadow: 0 0 50px #121212;
+}
+
+.articles .articlesContent {
+  height: 100vh;
+  background-color: #191919;
+}
+
+.articles .articlesContent .articleFilter {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles .articlesContent .articleFilter a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.articles .articlesContent .articleFilter a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.articles .articlesContent .articleFilter #filterMarker {
+  position: absolute;
+  height: 3px;
+  left: 0;
+  width: 0;
+  background-color: #ffd600;
+  -webkit-box-shadow: 0 0 5px #ffd600;
+          box-shadow: 0 0 5px #ffd600;
+  bottom: -8px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.articles .articlesContent .articleFilter .filterDivider {
+  margin: 0 1.5rem;
+  width: 2px;
+  height: 1.3rem;
+  background-color: #ffd600;
+}
+/*# sourceMappingURL=articlesPage.css.map */

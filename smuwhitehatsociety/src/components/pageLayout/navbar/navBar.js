@@ -41,6 +41,14 @@ class NavBar extends React.Component {
                 }))
             }
         }
+        else {
+            this.setState(prevState => ({
+                scrollYOffset: window.pageYOffset,
+                cN: "top",
+                navOpen: false,
+                headerCN: "",
+            }))
+        }
     }
 
     toggleHamburger = () => {

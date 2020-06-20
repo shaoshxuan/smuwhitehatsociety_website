@@ -1,0 +1,85 @@
+@import "../../styles/index.scss";
+
+.articles {
+    width: 100%;
+
+    .articlesBanner {
+        width: 100%;
+        height: 400px;
+        background-color: $backgroundColor;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: inherit;
+            opacity: 0.5;
+        }
+
+        .articlesHeader {
+            padding: 1.5rem;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: $bodyTextColor;
+            width: 35vw;
+            border-radius: 0.5rem;
+            background-color: #131818;
+            box-shadow: 0 0 50px $headerFooterBackgroundColor;
+        
+        }
+    }
+
+    .articlesContent {
+        height: 100vh;
+        background-color: $backgroundColor;
+
+        .articleFilter {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: $bodyTextColor;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            #filterMarker {
+                position: absolute;
+                height: 3px;
+                left: 0;
+                width: 0;
+                background-color: $highlightColor;
+                box-shadow: 0 0 5px $highlightColor;
+                bottom: -8px;
+                transition: all 0.3s ease 0s;
+            }
+
+            .filterDivider {
+                margin: 0 1.5rem;
+                width: 2px;
+                height: 1.3rem;
+                background-color: $highlightColor;
+            }
+        }
+    }
+}

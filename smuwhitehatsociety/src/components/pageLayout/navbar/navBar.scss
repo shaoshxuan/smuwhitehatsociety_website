@@ -93,6 +93,11 @@ header {
     }
 }
 
+header.top {
+    background-color: transparent;
+    box-shadow: none;
+}
+
 header.fadeUp {
     top: -100px;
 }
@@ -187,6 +192,10 @@ header.fadeUp {
 
     header.open {
         right: 0;
+    }
+
+    header.top {
+        background-color: $headerFooterBackgroundColor;
     }
 
     header.fadeUp {
