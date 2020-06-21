@@ -28,23 +28,22 @@
             font-size: 1.5rem;
             font-weight: 300;
             color: $bodyTextColor;
-            width: 35vw;
+            width: 40rem;
             border-radius: 0.5rem;
-            background-color: #131818;
+            background-color: #131818da;
             box-shadow: 0 0 50px $headerFooterBackgroundColor;
         
         }
     }
 
     .articlesContent {
-        height: 100vh;
         background-color: $backgroundColor;
 
         .articleFilter {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            width: 25%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -60,6 +59,7 @@
 
                 &:hover {
                     transform: scale(1.05);
+                    text-shadow: 0 0 10px $highlightColor;
                 }
             }
 
@@ -79,6 +79,78 @@
                 width: 2px;
                 height: 1.3rem;
                 background-color: $highlightColor;
+            }
+        }
+
+        .articlesContainer {
+            width: 100%;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
+@media all and (max-width: 1440px){
+    .articles {
+        .articlesBanner {
+            .articlesHeader {
+                width: 60vw;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+    .articles {
+        .articlesBanner {
+            height: 300px;
+            
+            .articlesHeader {
+                width: 80vw;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 680px){
+    .articles {
+        .articlesBanner {
+            .articlesHeader {
+                width: 95vw;
+            }
+        }
+
+        .articlesContent {    
+            .articleFilter {
+                a {
+                    font-size: 1rem;
+                }
+
+                #filterMarker {
+                    height: 2px;
+                }
+    
+                .filterDivider {
+                    width: 1px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 400px){
+    .articles {
+        .articlesBanner {
+            .articlesHeader {
+                font-size: 1.1rem;
+            }
+        }
+
+        .articlesContent {    
+            .articleFilter {
+                a {
+                    font-size: 0.9rem;
+                }
             }
         }
     }

@@ -31,8 +31,6 @@ const TheExco = () => {
         }
     `)
 
-    console.log(excoMemberData)
-
     return (
         <div id="exco">
             <div className="theExco sectionPad">

@@ -1,0 +1,101 @@
+@import "../styles/index.scss";
+
+.articlePage {
+    min-height: 100vh;
+    background-color: $backgroundColor;
+
+    .articleContentContainer {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8rem;
+        width: 75rem;
+        color: $bodyTextColor;
+
+        .articleTitleContentBreak {
+            padding: 1.2rem;
+        }
+
+        .articleTitle {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .articleCoverPhoto {
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        .articleContent {
+            font-size: 1.1rem;
+            font-weight: 200;
+
+            p {
+                padding: 0.5rem 0;
+            }
+
+            a {
+                color: $highlightColor;
+            }
+        }
+
+        .originalLink {
+            font-weight: 200;
+
+            a {
+                text-decoration: none;
+                color: $highlightColor;
+                font-weight: 400;
+            }
+        }
+
+        .articleAuthorDatePost {
+            font-weight: 300;
+        }
+    }
+}
+
+@media all and (max-width: 1440px){
+    .articlePage {
+        .articleContentContainer {
+            padding: 8rem;
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+    .articlePage {
+        .articleContentContainer {
+            padding: 5rem;
+
+            .articleTitle {
+                font-size: 1.7rem;
+            }
+    
+            .articleContent {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .articlePage {
+        .articleContentContainer {
+            padding: 4rem;
+
+            .articleTitle {
+                font-size: 1.4rem;
+            }
+    
+            .articleContent {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

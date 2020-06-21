@@ -1,19 +1,20 @@
 import React from 'react';
 // import { Link } from 'gatsby';
+import Articles from './articles/articles';
 import './articlesPage.css';
 
 class ArticlesPage extends React.Component {
     constructor() {
         super();
         this.state = {
+            filter: "All",
             marker: "",
-            
         }
         this.indicator = this.indicator.bind(this);
     }
 
     componentDidMount() {
-        var allFilter = document.querySelector(".articlesContent .articleFilter #allArticlesFilter");
+        var allFilter = document.querySelector(".articlesContent .articleFilter #All");
         this.setState(() => ({
             marker: {
                 left: allFilter.offsetLeft+"px",
@@ -32,7 +33,7 @@ class ArticlesPage extends React.Component {
         this.setState(() => ({
             marker: {
                 left: allFilter.offsetLeft+"px",
-                width:allFilter.offsetWidth+"px",
+                width: allFilter.offsetWidth+"px",
             }
         }))
         var filterTags = document.querySelectorAll(".articlesContent .articleFilter a");
@@ -45,6 +46,7 @@ class ArticlesPage extends React.Component {
 
     indicator = (e) => {
         this.setState(prevState => ({
+            filter: e.id,
             marker: {
                 left: e.offsetLeft+"px",
                 width: e.offsetWidth+"px",
@@ -70,15 +72,18 @@ class ArticlesPage extends React.Component {
                 <div className="articlesContent sectionPad">
                     <div className="articleFilter">
                         <div id="filterMarker" style={{left: this.state.marker.left, width: this.state.marker.width}}></div>
-                        <a href="#" id="allArticlesFilter">All</a>
+                        <a href="#" id="All">All</a>
                         <div className="filterDivider"></div>
-                        <a href="#">News & Events</a>
+                        <a href="#" id="ContentfulExternalArticleRepost">External News</a>
                         <div className="filterDivider"></div>
-                        <a href="#">Our Posts</a>
+                        <a href="#" id="ContentfulWhitehatSocArticles">Our Events & Posts</a>
                     </div>
                     <div className="headerBreak"></div>
+                    <div className="headerBreak"></div>
                     <div className="articlesContainer">
-
+                        <Articles 
+                            filter={this.state.filter}
+                        />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,52 @@
+@import "../../../../styles/index.scss";
+
+.articleContainer {
+    margin: 1rem;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .articleLayout {
+        padding: 1rem;
+        width: 17rem;
+        height: 18rem;
+        border: 2px solid $bodyTextColor;
+        border-radius: 0.2rem;
+        background-color: $backgroundColorAlt;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px $highlightColor
+    }
+
+    .articleType {
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: $highlightColor;
+    }
+
+    .articleTitle {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $bodyTextColor;
+    }
+
+    .author, .date {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $highlightColor
+    }
+
+    .date {
+        text-align: right;
+    }
+}
+}
+

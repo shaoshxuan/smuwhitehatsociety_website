@@ -112,15 +112,14 @@
   font-size: 1.5rem;
   font-weight: 300;
   color: #ffffff;
-  width: 35vw;
+  width: 40rem;
   border-radius: 0.5rem;
-  background-color: #131818;
+  background-color: #131818da;
   -webkit-box-shadow: 0 0 50px #121212;
           box-shadow: 0 0 50px #121212;
 }
 
 .articles .articlesContent {
-  height: 100vh;
   background-color: #191919;
 }
 
@@ -129,7 +128,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 25%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,6 +157,7 @@
 .articles .articlesContent .articleFilter a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  text-shadow: 0 0 10px #ffd600;
 }
 
 .articles .articlesContent .articleFilter #filterMarker {
@@ -178,5 +178,51 @@
   width: 2px;
   height: 1.3rem;
   background-color: #ffd600;
+}
+
+.articles .articlesContent .articlesContainer {
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media all and (max-width: 1440px) {
+  .articles .articlesBanner .articlesHeader {
+    width: 60vw;
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .articles .articlesBanner {
+    height: 300px;
+  }
+  .articles .articlesBanner .articlesHeader {
+    width: 80vw;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .articles .articlesBanner .articlesHeader {
+    width: 95vw;
+  }
+  .articles .articlesContent .articleFilter a {
+    font-size: 1rem;
+  }
+  .articles .articlesContent .articleFilter #filterMarker {
+    height: 2px;
+  }
+  .articles .articlesContent .articleFilter .filterDivider {
+    width: 1px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .articles .articlesBanner .articlesHeader {
+    font-size: 1.1rem;
+  }
+  .articles .articlesContent .articleFilter a {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=articlesPage.css.map */
