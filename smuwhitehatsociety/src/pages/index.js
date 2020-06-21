@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/index.css";
 import PageLayout from '../components/pageLayout/pageLayout.js';
+import Head from '../components/head.js';
 
 import Landing from "../components/indexPage/landing/landing";
 import About from "../components/indexPage/about/about";
@@ -11,6 +12,7 @@ const IndexPage = () => {
     return (
         <>
             <PageLayout>
+                <Head title="Home"/>
                 <Landing />
                 <About />
                 <TheExco />

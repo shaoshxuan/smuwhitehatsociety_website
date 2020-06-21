@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Head from '../components/head.js';
 import PageLayout from '../components/pageLayout/pageLayout';
 import './404styles/404styles.css';
 
@@ -9,6 +10,7 @@ import { faCompass } from '@fortawesome/free-solid-svg-icons';
 const NotFound = () => {
     return (
         <PageLayout>
+            <Head title="404" />
             <div className="notFound">
                 <div className="notFoundBG">
                     <img src={require("../assets/404.jpg")} alt="Not Found Background"/>

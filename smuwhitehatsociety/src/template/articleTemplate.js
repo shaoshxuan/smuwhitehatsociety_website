@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Head from '../components/head.js';
 import PageLayout from '../components/pageLayout/pageLayout.js';
 import './articleTemplate.css';
 
@@ -48,6 +49,7 @@ const ArticleTemplate = (props) => {
     const fromWhich = props.data.contentfulWhitehatSocArticles === null ? props.data.contentfulExternalArticleRepost : props.data.contentfulWhitehatSocArticles;
     return (
         <PageLayout>
+            <Head title={fromWhich.title} />
             <div className="articlePage">
                 <div className="articleContentContainer">
                     <div className="articleTitle">
