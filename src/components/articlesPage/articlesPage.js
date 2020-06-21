@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'gatsby';
-import Articles from './articles/articles';
+import Articles from './articles/articles.js';
 import './articlesPage.css';
 
 class ArticlesPage extends React.Component {

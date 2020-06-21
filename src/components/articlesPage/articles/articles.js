@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery} from 'gatsby';
-import ArticleLayout from './articleLayout/articleLayout';
+import ArticleLayout from './articleLayout/articleLayout.js';
 import './articles.css';
 
 const Articles = (props) => {

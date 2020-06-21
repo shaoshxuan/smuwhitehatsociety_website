@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery} from 'gatsby';
 
 import './theExco.css';
-import ExcoMember from './excoMember/excoMember';
+import ExcoMember from './excoMember/excoMember.js';
 
 const TheExco = () => {
     const excoMemberData = useStaticQuery(graphql`
