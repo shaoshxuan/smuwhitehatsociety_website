@@ -5,7 +5,9 @@ const Head = ({ title }) => {
     return (
         <Helmet 
             title={`${title} | Whitehat Society @ SMU-SIS`}
-        />
+        >
+            <link rel="icon" href={require("../../static/favicon.ico")} />
+        </Helmet>
     )
 }
 
