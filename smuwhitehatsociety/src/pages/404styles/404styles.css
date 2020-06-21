@@ -1,0 +1,70 @@
+.notFound {
+  height: 100vh;
+  background-color: #191919;
+}
+
+.notFound .notFoundBG img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+}
+
+.notFound .notFoundTextContainer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90vw;
+  text-align: center;
+}
+
+.notFound .notFoundTextContainer .notFoundText {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffd600;
+}
+
+.notFound .notFoundTextContainer .notFoundText .guideIcon {
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.notFound .notFoundTextContainer .notFoundText .guideIcon:hover {
+  -webkit-transform: rotate(-90deg) scale(1.1);
+          transform: rotate(-90deg) scale(1.1);
+  -webkit-filter: drop-shadow(0 0 30px #ffffff);
+          filter: drop-shadow(0 0 30px #ffffff);
+}
+
+.notFound .notFoundTextContainer .errorCode {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+@media all and (max-width: 960px) {
+  .notFound .notFoundTextContainer .errorCode {
+    font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .notFound .notFoundTextContainer .notFoundText {
+    font-size: 1rem;
+  }
+  .notFound .errorCode {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=404styles.css.map */

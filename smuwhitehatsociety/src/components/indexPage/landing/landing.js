@@ -9,6 +9,7 @@ const Landing = () => {
     return (
         <div id="home" className="landing">
             <img src={require("../../../assets/hackComp.jpg")} alt="landingBackground"/>
+            {/* Photo by Markus Spiske on Unsplash */}
             <div>
                 <div className="landingFlag">$_FLAG&#123;5Mu_wH1t3Ha7_50c13Ty&#125;</div>
             </div>

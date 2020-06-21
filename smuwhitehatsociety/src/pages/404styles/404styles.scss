@@ -1,0 +1,73 @@
+.notFound {
+    height: 100vh;
+    background-color: #191919;
+
+    .notFoundBG img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.3;
+    }
+
+    .notFoundTextContainer {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        text-align: center;
+
+        .notFoundText {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ffd600;
+
+            .guideIcon {
+                padding: 0.5rem;
+                display: inline-block;
+                font-size: 2.5rem;
+                color: #ffffff;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    transform: rotate(-90deg) scale(1.1);
+                    filter: drop-shadow(0 0 30px #ffffff);
+                }
+            }
+        }
+
+        .errorCode {
+            font-size: 4rem;
+            font-weight: 500;
+            color: #ffffff;
+            padding: 2rem 0;
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+    .notFound {    
+        .notFoundTextContainer {
+            .errorCode {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .notFound {
+        .notFoundTextContainer {
+            .notFoundText {
+                font-size: 1rem;
+            }
+        }
+
+        .errorCode {
+            font-size: 2rem;
+        }
+    }
+}
