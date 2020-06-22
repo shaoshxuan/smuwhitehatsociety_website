@@ -81,7 +81,7 @@
 }
 
 .articleContainer {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .articleContainer a {
@@ -138,5 +138,15 @@
 
 .articleContainer .articleLayout .date {
   text-align: right;
+}
+
+@media all and (max-width: 680px) {
+  .articleContainer {
+    width: 100%;
+  }
+  .articleContainer .articleLayout {
+    width: 100%;
+    height: 12rem;
+  }
 }
 /*# sourceMappingURL=articleLayout.css.map */

@@ -182,8 +182,6 @@
 
 .articles .articlesContent .articlesContainer {
   width: 100%;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 @media all and (max-width: 1440px) {
