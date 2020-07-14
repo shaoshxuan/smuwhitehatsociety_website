@@ -40,6 +40,12 @@ const TheExco = () => {
                 </div>
                 <div className="headerBreak"></div>
                 <div className="excoContainer">
+                    <div style={{display:"none"}}>
+                        I wanted to be in the Exexcutive Committee... But these fools did not let me in.
+                        I wanted to deface the website but that would make me the bad guy so I shall not do such a thing...
+                        Instead, here is my Twitter profile [https://twitter.com/HackerJamesBest]. Hit me up and let's gossip there!!
+                        We shall not be restricted by the power of status!
+                    </div>
                     {excoMemberData.allContentfulExcoMembers.edges.map((member) => {
                         return (
                             <ExcoMember
